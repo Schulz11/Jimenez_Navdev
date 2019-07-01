@@ -20,12 +20,15 @@ class ViewController: UIViewController {
     }
     
     @IBAction func itemPressed(_ sender: Any) {
+        screen.text = "Item 1 pressed"
     }
     
     @IBAction func item2Pressed(_ sender: Any) {
+        screen.text = "The second item is pressed"
     }
     
     @IBAction func item3Pressed(_ sender: Any) {
+        screen.text = "The third item is pressed"
     }
     
     override func viewDidLoad() {
