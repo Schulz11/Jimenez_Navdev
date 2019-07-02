@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Table_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="AKT-7r-iOM">
+                                <rect key="frame" x="0.0" y="161" width="414" height="701"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="hq6-xQ-Iy5">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hq6-xQ-Iy5" id="j6t-Ma-qu8">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="YdJ-hk-ldK"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="qhM-Fo-4pO"/>
+                                </connections>
+                            </tableView>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5" minValue="1" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="oDx-QH-3BC">
+                                <rect key="frame" x="-2" y="78" width="418" height="31"/>
+                                <connections>
+                                    <action selector="sliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="409-88-iEP"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="AKT-7r-iOM" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="3wz-Mv-hTn"/>
+                            <constraint firstItem="oDx-QH-3BC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="34" id="Bip-U7-Von"/>
+                            <constraint firstItem="oDx-QH-3BC" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="F3O-n6-YFe"/>
+                            <constraint firstItem="oDx-QH-3BC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Xu7-uT-8vc"/>
+                            <constraint firstItem="AKT-7r-iOM" firstAttribute="top" secondItem="oDx-QH-3BC" secondAttribute="bottom" constant="34" id="dEU-my-1hn"/>
+                            <constraint firstItem="AKT-7r-iOM" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="eSb-BO-fx6"/>
+                            <constraint firstItem="AKT-7r-iOM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="uCG-BU-oEH"/>
+                            <constraint firstItem="AKT-7r-iOM" firstAttribute="top" secondItem="oDx-QH-3BC" secondAttribute="bottom" constant="53" id="vBY-t6-Bre"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="slider" destination="oDx-QH-3BC" id="DaZ-Ip-Cl8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-82.608695652173921" y="133.25892857142856"/>
+        </scene>
+    </scenes>
+</document>
