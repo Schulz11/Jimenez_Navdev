@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--First-->
+        <scene sceneID="hNz-n2-bh7">
+            <objects>
+                <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="Cat_Calculator_and_Egg_Timer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6TD-JP-Xl3">
+                                <rect key="frame" x="147" y="334" width="120" height="55"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="30"/>
+                                <state key="normal" title="Multiply"/>
+                                <connections>
+                                    <action selector="timesSeven:" destination="9pv-A4-QxB" eventType="touchUpInside" id="48K-dE-9EB"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cat Calculator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v8F-0s-jQf">
+                                <rect key="frame" x="101" y="100" width="213" height="33"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Age" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c2z-v6-oVH">
+                                <rect key="frame" x="158" y="195" width="97" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Results" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8eO-O2-20C">
+                                <rect key="frame" x="139" y="497" width="136" height="39"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="c2z-v6-oVH" firstAttribute="top" secondItem="v8F-0s-jQf" secondAttribute="bottom" constant="62" id="0TB-RU-olh"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="bottom" secondItem="8eO-O2-20C" secondAttribute="bottom" constant="277" id="1yg-FU-eOG"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="v8F-0s-jQf" secondAttribute="trailing" constant="100" id="2ti-Cd-cjr"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="6TD-JP-Xl3" secondAttribute="trailing" constant="147" id="6cY-rH-Mnb"/>
+                            <constraint firstItem="c2z-v6-oVH" firstAttribute="top" secondItem="v8F-0s-jQf" secondAttribute="bottom" constant="62" id="7Yq-51-1uA"/>
+                            <constraint firstItem="6TD-JP-Xl3" firstAttribute="top" secondItem="c2z-v6-oVH" secondAttribute="bottom" constant="110" id="9q6-9Y-Qdu"/>
+                            <constraint firstItem="v8F-0s-jQf" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="101" id="Ait-0C-Nmc"/>
+                            <constraint firstItem="8eO-O2-20C" firstAttribute="top" secondItem="6TD-JP-Xl3" secondAttribute="bottom" constant="110" id="Gru-Ug-G3x"/>
+                            <constraint firstItem="v8F-0s-jQf" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="56" id="HjS-1h-VvC"/>
+                            <constraint firstItem="6TD-JP-Xl3" firstAttribute="top" secondItem="c2z-v6-oVH" secondAttribute="bottom" constant="109" id="IY6-Qu-R21"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="8eO-O2-20C" secondAttribute="trailing" constant="139" id="JlA-2D-2Iq"/>
+                            <constraint firstItem="8eO-O2-20C" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="139" id="VBR-yJ-CXh"/>
+                            <constraint firstItem="6TD-JP-Xl3" firstAttribute="top" secondItem="c2z-v6-oVH" secondAttribute="bottom" constant="109" id="ZAS-sD-7E6"/>
+                            <constraint firstItem="v8F-0s-jQf" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="56" id="aFL-zJ-z1y"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="c2z-v6-oVH" secondAttribute="trailing" constant="159" id="ec3-0H-17y"/>
+                            <constraint firstItem="6TD-JP-Xl3" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="147" id="mwM-o6-9QS"/>
+                            <constraint firstItem="8eO-O2-20C" firstAttribute="top" secondItem="6TD-JP-Xl3" secondAttribute="bottom" constant="108" id="sNY-3F-mn8"/>
+                            <constraint firstItem="8eO-O2-20C" firstAttribute="top" secondItem="6TD-JP-Xl3" secondAttribute="bottom" constant="108" id="uT4-sY-JOb"/>
+                            <constraint firstItem="c2z-v6-oVH" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="158" id="z07-aF-ffB"/>
+                            <constraint firstItem="c2z-v6-oVH" firstAttribute="top" secondItem="v8F-0s-jQf" secondAttribute="bottom" constant="62" id="zKa-PC-e1E"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="results" destination="8eO-O2-20C" id="UvA-KU-nlq"/>
+                        <outlet property="userInput" destination="c2z-v6-oVH" id="5Af-8B-Pyu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="749.27536231884062" y="-320.75892857142856"/>
+        </scene>
+        <!--Second-->
+        <scene sceneID="wg7-f3-ORb">
+            <objects>
+                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="Cat_Calculator_and_Egg_Timer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="210" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="04A-p6-JMq">
+                                <rect key="frame" x="160" y="413.5" width="94" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fyl-z7-d3B">
+                                <rect key="frame" x="0.0" y="1250" width="0.0" height="45"/>
+                                <items>
+                                    <barButtonItem title="-10" id="dKL-qd-oBb">
+                                        <connections>
+                                            <action selector="subtractTen:" destination="8rJ-Kc-sve" id="OYo-6H-q6u"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="NnR-sI-JX0"/>
+                                    <barButtonItem title="Reset" id="JMS-eU-o65">
+                                        <connections>
+                                            <action selector="reset:" destination="8rJ-Kc-sve" id="xcY-Ju-9Nb"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="fmH-Bo-1zP"/>
+                                    <barButtonItem title="+10" id="dPp-kR-0OA">
+                                        <connections>
+                                            <action selector="addTen:" destination="8rJ-Kc-sve" id="PZz-7W-p0n"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LeZ-NX-eaz">
+                                <rect key="frame" x="0.0" y="34" width="0.0" height="43"/>
+                                <items>
+                                    <navigationItem title="Egg Timer" id="Udm-0f-2Wg">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="pause" id="X9M-dc-27W">
+                                            <connections>
+                                                <action selector="pause:" destination="8rJ-Kc-sve" id="WKg-M5-VvJ"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="play" id="dDb-j9-2zL">
+                                            <connections>
+                                                <action selector="play:" destination="8rJ-Kc-sve" id="dfO-pr-HLF"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Fyl-z7-d3B" firstAttribute="top" secondItem="04A-p6-JMq" secondAttribute="bottom" constant="324" id="4Nn-QZ-hrS"/>
+                            <constraint firstItem="Fyl-z7-d3B" firstAttribute="bottom" secondItem="O1u-W8-tvY" secondAttribute="bottom" id="5eW-lU-JyI"/>
+                            <constraint firstItem="Fyl-z7-d3B" firstAttribute="trailing" secondItem="O1u-W8-tvY" secondAttribute="trailing" id="8Wf-9u-4Pd"/>
+                            <constraint firstItem="04A-p6-JMq" firstAttribute="centerX" secondItem="O1u-W8-tvY" secondAttribute="centerX" id="Dp8-E6-O5W"/>
+                            <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" secondItem="04A-p6-JMq" secondAttribute="trailing" constant="160" id="FPh-39-7lN"/>
+                            <constraint firstItem="Fyl-z7-d3B" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" id="Gk1-d8-uMu"/>
+                            <constraint firstItem="O1u-W8-tvY" firstAttribute="bottom" secondItem="Fyl-z7-d3B" secondAttribute="bottom" id="IGP-LN-24K"/>
+                            <constraint firstItem="O1u-W8-tvY" firstAttribute="top" secondItem="LeZ-NX-eaz" secondAttribute="top" constant="10" id="IHD-Xu-XHp"/>
+                            <constraint firstItem="Fyl-z7-d3B" firstAttribute="top" secondItem="04A-p6-JMq" secondAttribute="bottom" constant="324" id="SeB-zT-z2o"/>
+                            <constraint firstItem="LeZ-NX-eaz" firstAttribute="trailing" secondItem="O1u-W8-tvY" secondAttribute="trailing" id="Va3-pq-Gs3"/>
+                            <constraint firstItem="LeZ-NX-eaz" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" id="WTK-wF-5WC"/>
+                            <constraint firstItem="04A-p6-JMq" firstAttribute="centerY" secondItem="O1u-W8-tvY" secondAttribute="centerY" id="ZRm-Ze-m1o"/>
+                            <constraint firstItem="04A-p6-JMq" firstAttribute="top" secondItem="LeZ-NX-eaz" secondAttribute="bottom" constant="337" id="jwZ-Ec-spT"/>
+                            <constraint firstItem="04A-p6-JMq" firstAttribute="top" secondItem="LeZ-NX-eaz" secondAttribute="bottom" constant="337" id="qBl-6t-bqI"/>
+                            <constraint firstItem="04A-p6-JMq" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" constant="160" id="tZm-d8-PEk"/>
+                            <constraint firstItem="LeZ-NX-eaz" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="top" constant="34" id="zup-p1-8gV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
+                    <connections>
+                        <outlet property="label" destination="04A-p6-JMq" id="sdK-D8-8Bz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="749.27536231884062" y="359.59821428571428"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="first" width="30" height="30"/>
+        <image name="second" width="30" height="30"/>
+    </resources>
+</document>
